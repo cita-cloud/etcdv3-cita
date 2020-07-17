@@ -1,6 +1,6 @@
 pragma solidity 0.4.24;
 
-contract ETCD {
+contract Etcd {
     struct Value {
         bool is_valid;
         // create_revision is the revision of last creation on this key.
@@ -34,16 +34,17 @@ contract ETCD {
     }
     
     function kv_get(bytes key) view public returns (bytes) {
+        if (_keyValueMap[key].is_valid == false) {
+            return ;
+        }
         int64 lease = _keyValueMap[key].lease;
-        if (lease == 0) {
-            return _keyValueMap[key].value;
-        } else {
+        if (lease != 0) {
             Lease storage l = _leaseMap[lease];
-            if ((l.start + uint(l.ttl * 1000)) > now) {
-                return _keyValueMap[key].value;
+            if ((l.start + uint(l.ttl * 1000)) <= now) {
+                return ;
             }
         }
-        return ;
+        return _keyValueMap[key].value;
     }
     
     function kv_del(bytes key) public {
@@ -60,6 +61,10 @@ contract ETCD {
             _leaseMap[_lease_id] = Lease(now, ttl);
             _lease_id = _lease_id + 1;
         }
+    }
+
+    function lease_id() view public returns (int64) {
+        return _lease_id - 1;
     }
     
     function lease_revoke(int64 lease) public {

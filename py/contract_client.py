@@ -30,6 +30,21 @@ class ContractClient():
         tx_hash = self.etcd_obj.kv_del(key)
         self.client.confirm_transaction(tx_hash)
 
+    def kv_is_valid(self, key):
+        return self.etcd_obj.kv_is_valid(key)
+
+    def kv_create_revision(self, key):
+        return self.etcd_obj.kv_create_revision(key)
+
+    def kv_mod_revision(self, key):
+        return self.etcd_obj.kv_mod_revision(key)
+
+    def kv_version(self, key):
+        return self.etcd_obj.kv_version(key)
+
+    def kv_lease(self, key):
+        return self.etcd_obj.kv_lease(key)
+
     def lease_grant(self, lease, ttl):
         tx_hash = self.etcd_obj.lease_grant(lease, ttl)
         self.client.confirm_transaction(tx_hash)
@@ -54,15 +69,44 @@ class ContractClient():
 if __name__ == '__main__':
     c = ContractClient('http://127.0.0.1:1337', '0xc2c9d4828cd0755542d0dfc9deaf44f2f40bb13d35f5907a50f60d8ccabf9832')
     # kv test
+    print('put key: /test/a')
     c.kv_put(b'/test/a', b'1', 0)
-    print(c.kv_get(b'/test/a'))
+
+    # print info of key
+    print('get key /test/a : ', c.kv_get(b'/test/a'))
+    print('is valid of /test/a : ', c.kv_is_valid(b'/test/a'))
+    print('create_revision of /test/a : ', c.kv_create_revision(b'/test/a'))
+    print('mod_revision of /test/a : ', c.kv_mod_revision(b'/test/a'))
+    print('version of /test/a : ', c.kv_version(b'/test/a'))
+    print('lease of /test/a : ', c.kv_lease(b'/test/a'))
+
+    print('modify key: /test/a')
+    c.kv_put(b'/test/a', b'2', 0)
+
+    # print info of key
+    print('get key /test/a : ', c.kv_get(b'/test/a'))
+    print('is valid of /test/a : ', c.kv_is_valid(b'/test/a'))
+    print('create_revision of /test/a : ', c.kv_create_revision(b'/test/a'))
+    print('mod_revision of /test/a : ', c.kv_mod_revision(b'/test/a'))
+    print('version of /test/a : ', c.kv_version(b'/test/a'))
+    print('lease of /test/a : ', c.kv_lease(b'/test/a'))
+
+    print('del key: /test/a')
     c.kv_del(b'/test/a')
-    print(c.kv_get(b'/test/a'))
+
+    # print info of key
+    print('get key /test/a : ', c.kv_get(b'/test/a'))
+    print('is valid of /test/a : ', c.kv_is_valid(b'/test/a'))
+    print('create_revision of /test/a : ', c.kv_create_revision(b'/test/a'))
+    print('mod_revision of /test/a : ', c.kv_mod_revision(b'/test/a'))
+    print('version of /test/a : ', c.kv_version(b'/test/a'))
+    print('lease of /test/a : ', c.kv_lease(b'/test/a'))
+
     # lease test
     l_id = c.lease_grant(0, 10)
     print(l_id)
     c.kv_put(b'/test/l', b'2', l_id)
-    print(c.kv_get(b'/test/l'))
+    print('get key: /test/l : ', c.kv_get(b'/test/l'))
     time.sleep(30)
-    print(c.kv_get(b'/test/l'))
+    print('get key /test/l after lease : ', c.kv_get(b'/test/l'))
 

@@ -1,0 +1,636 @@
+server start.
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitiont"
+count_only: true
+`
+
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648658b80>`
+Watch recv: `create_request {
+  key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+  range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitiont"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648665a60>`
+Watch recv: `create_request {
+  key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+  range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/podtemplates/"
+range_end: "/registry/podtemplates0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/podtemplates"
+range_end: "/registry/podtemplatet"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/events"
+range_end: "/registry/eventt"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f26486783d0>`
+Range: `key: "/registry/limitranges"
+range_end: "/registry/limitranget"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/limitranges/"
+range_end: "/registry/limitranges0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch recv: `create_request {
+  key: "/registry/podtemplates/"
+  range_end: "/registry/podtemplates0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/resourcequotas/"
+range_end: "/registry/resourcequotas0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/resourcequotas"
+range_end: "/registry/resourcequotat"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648672160>`
+Watch recv: `create_request {
+  key: "/registry/limitranges/"
+  range_end: "/registry/limitranges0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/secrets"
+range_end: "/registry/secrett"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648678190>`
+Watch recv: `create_request {
+  key: "/registry/resourcequotas/"
+  range_end: "/registry/resourcequotas0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/secrets/"
+range_end: "/registry/secrets0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/persistentvolumes/"
+range_end: "/registry/persistentvolumes0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648672250>`
+Watch recv: `create_request {
+  key: "/registry/secrets/"
+  range_end: "/registry/secrets0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/persistentvolumes"
+range_end: "/registry/persistentvolumet"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f264867b1f0>`
+Range: `key: "/registry/persistentvolumeclaims"
+range_end: "/registry/persistentvolumeclaimt"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch recv: `create_request {
+  key: "/registry/persistentvolumes/"
+  range_end: "/registry/persistentvolumes0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/configmaps/"
+range_end: "/registry/configmaps0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/configmaps"
+range_end: "/registry/configmapt"
+count_only: true
+`
+Range: `key: "/registry/persistentvolumeclaims/"
+range_end: "/registry/persistentvolumeclaims0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/namespaces"
+range_end: "/registry/namespacet"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648687ac0>`
+Range: `key: "/registry/namespaces/"
+range_end: "/registry/namespaces0"
+limit: 10000
+`Watch recv: `create_request {
+  key: "/registry/configmaps/"
+  range_end: "/registry/configmaps0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Range: `key: "/registry/services/endpoints/"
+range_end: "/registry/services/endpoints0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/minions/"
+range_end: "/registry/minions0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/minions"
+range_end: "/registry/miniont"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/services/endpoints"
+range_end: "/registry/services/endpointt"
+count_only: true
+`
+Range: `key: "/registry/pods"
+range_end: "/registry/podt"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/pods/"
+range_end: "/registry/pods0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648690700>`
+Watch recv: `create_request {
+  key: "/registry/persistentvolumeclaims/"
+  range_end: "/registry/persistentvolumeclaims0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648687550>`
+Watch recv: `create_request {
+  key: "/registry/services/endpoints/"
+  range_end: "/registry/services/endpoints0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648687280>`
+Watch recv: `create_request {
+  key: "/registry/namespaces/"
+  range_end: "/registry/namespaces0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f264867b880>`
+Watch: `<grpc._server._RequestIterator object at 0x7f2648616280>`
+Range: `key: "/registry/masterleases/192.168.0.246"
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitiont"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/resourcequotas"
+range_end: "/registry/resourcequotat"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f26485ad220>`
+Watch: `<grpc._server._RequestIterator object at 0x7f26485ba2e0>`
+Range: `key: "/registry/events"
+range_end: "/registry/eventt"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f26485ba4c0>`
+Range: `key: "/registry/podtemplates"
+range_end: "/registry/podtemplatet"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch recv: `create_request {
+  key: "/registry/limitranges/"
+  range_end: "/registry/limitranges0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Watch recv: `create_request {
+  key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+  range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitiont"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+limit: 10000
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Range: `key: "/registry/apiextensions.k8s.io/customresourcedefinitions"
+range_end: "/registry/apiextensions.k8s.io/customresourcedefinitiont"
+count_only: true
+`
+Range resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+`
+Watch: `<grpc._server._RequestIterator object at 0x7f26485b2340>`
+Watch recv: `create_request {
+  key: "/registry/apiextensions.k8s.io/customresourcedefinitions/"
+  range_end: "/registry/apiextensions.k8s.io/customresourcedefinitions0"
+  start_revision: 8
+  prev_kv: true
+}
+
+Handle Create Request
+Watch req resp: `header {
+  cluster_id: 3104097219258285814
+  member_id: 8302883879756480553
+  revision: 7
+  raft_term: 2
+}
+created: true
+`

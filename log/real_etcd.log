@@ -1,0 +1,281 @@
+-- Logs begin at Sat 2020-06-20 11:51:48 CST. --
+Jul 24 14:43:12 ecs-linux kube-apiserver[21561]: [+]autoregister-completion ok
+Jul 24 14:43:12 ecs-linux kube-apiserver[21561]: [+]poststarthook/apiservice-openapi-controller ok
+Jul 24 14:43:12 ecs-linux kube-apiserver[21561]: healthz check failed
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.048664   21561 controller.go:130] OpenAPI AggregationController: action for item : Nothing (removed from the queue).
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.048812   21561 controller.go:130] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.052365   21561 storage_scheduling.go:134] created PriorityClass system-node-critical with value 2000001000
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.054083   21561 storage_scheduling.go:134] created PriorityClass system-cluster-critical with value 2000000000
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.054099   21561 storage_scheduling.go:143] all system priority classes are created successfully or already exist.
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: W0724 14:43:13.097687   21561 lease.go:224] Resetting endpoints for master service "kubernetes" to [192.168.0.246]
+Jul 24 14:43:13 ecs-linux kube-apiserver[21561]: I0724 14:43:13.104296   21561 controller.go:606] quota admission added evaluator for: endpointslices.discovery.k8s.io
+Jul 24 14:43:16 ecs-linux kube-apiserver[21561]: I0724 14:43:16.552261   21561 trace.go:116] Trace[1701234587]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:13.552102053 +0800 CST m=+3.809145531) (total time: 3.000132355s):
+Jul 24 14:43:16 ecs-linux kube-apiserver[21561]: Trace[1701234587]: [3.000132355s] [3.000101386s] END
+Jul 24 14:43:16 ecs-linux kube-apiserver[21561]: I0724 14:43:16.552458   21561 trace.go:116] Trace[164708540]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:13.552045173 +0800 CST m=+3.809088641) (total time: 3.000390575s):
+Jul 24 14:43:16 ecs-linux kube-apiserver[21561]: Trace[164708540]: [3.000390575s] [3.000341977s] END
+Jul 24 14:43:17 ecs-linux kube-apiserver[21561]: I0724 14:43:17.056180   21561 trace.go:116] Trace[186829246]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:14.056068434 +0800 CST m=+4.313111976) (total time: 3.000087066s):
+Jul 24 14:43:17 ecs-linux kube-apiserver[21561]: Trace[186829246]: [3.000087066s] [3.000075901s] END
+Jul 24 14:43:17 ecs-linux kube-apiserver[21561]: I0724 14:43:17.056338   21561 trace.go:116] Trace[840903367]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:14.056026452 +0800 CST m=+4.313069919) (total time: 3.000295423s):
+Jul 24 14:43:17 ecs-linux kube-apiserver[21561]: Trace[840903367]: [3.000295423s] [3.00025985s] END
+Jul 24 14:43:20 ecs-linux kube-apiserver[21561]: I0724 14:43:20.553478   21561 trace.go:116] Trace[827011200]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:17.553338743 +0800 CST m=+7.810382291) (total time: 3.000113191s):
+Jul 24 14:43:20 ecs-linux kube-apiserver[21561]: Trace[827011200]: [3.000113191s] [3.000101674s] END
+Jul 24 14:43:20 ecs-linux kube-apiserver[21561]: I0724 14:43:20.553643   21561 trace.go:116] Trace[1824003694]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:17.55328784 +0800 CST m=+7.810331308) (total time: 3.000338389s):
+Jul 24 14:43:20 ecs-linux kube-apiserver[21561]: Trace[1824003694]: [3.000338389s] [3.000296222s] END
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: I0724 14:43:21.057316   21561 trace.go:116] Trace[907322103]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:18.057166428 +0800 CST m=+8.314209977) (total time: 3.000117207s):
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: Trace[907322103]: [3.000117207s] [3.00010659s] END
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: I0724 14:43:21.057702   21561 trace.go:116] Trace[633110638]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:18.057125894 +0800 CST m=+8.314169435) (total time: 3.000545694s):
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: Trace[633110638]: [3.000545694s] [3.000511474s] END
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: I0724 14:43:21.773608   21561 trace.go:116] Trace[827261426]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:18.773436726 +0800 CST m=+9.030480194) (total time: 3.00014496s):
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: Trace[827261426]: [3.00014496s] [3.000133604s] END
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: I0724 14:43:21.773773   21561 trace.go:116] Trace[1287994185]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:18.773392712 +0800 CST m=+9.030436178) (total time: 3.000364137s):
+Jul 24 14:43:21 ecs-linux kube-apiserver[21561]: Trace[1287994185]: [3.000364137s] [3.000326908s] END
+Jul 24 14:43:24 ecs-linux kube-apiserver[21561]: I0724 14:43:24.236968   21561 controller.go:606] quota admission added evaluator for: serviceaccounts
+Jul 24 14:43:24 ecs-linux kube-apiserver[21561]: I0724 14:43:24.554533   21561 trace.go:116] Trace[1638364323]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:21.554387713 +0800 CST m=+11.811431180) (total time: 3.000121487s):
+Jul 24 14:43:24 ecs-linux kube-apiserver[21561]: Trace[1638364323]: [3.000121487s] [3.00010922s] END
+Jul 24 14:43:24 ecs-linux kube-apiserver[21561]: I0724 14:43:24.554713   21561 trace.go:116] Trace[740296955]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:21.554336114 +0800 CST m=+11.811379584) (total time: 3.000354255s):
+Jul 24 14:43:24 ecs-linux kube-apiserver[21561]: Trace[740296955]: [3.000354255s] [3.00030943s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.058648   21561 trace.go:116] Trace[433677017]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:22.058510436 +0800 CST m=+12.315553904) (total time: 3.000114476s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[433677017]: [3.000114476s] [3.00010457s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.058809   21561 trace.go:116] Trace[327869676]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:22.058468108 +0800 CST m=+12.315511564) (total time: 3.000325099s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[327869676]: [3.000325099s] [3.000289825s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.774887   21561 trace.go:116] Trace[812058672]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:22.774723693 +0800 CST m=+13.031767160) (total time: 3.000137025s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[812058672]: [3.000137025s] [3.000125678s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.775064   21561 trace.go:116] Trace[337908531]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:22.774681116 +0800 CST m=+13.031724677) (total time: 3.000361865s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[337908531]: [3.000361865s] [3.000326289s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.977472   21561 trace.go:116] Trace[1036041286]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:22.977357457 +0800 CST m=+13.234400931) (total time: 3.000088447s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[1036041286]: [3.000088447s] [3.000074594s] END
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: I0724 14:43:25.977634   21561 trace.go:116] Trace[41999104]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:22.977314253 +0800 CST m=+13.234357727) (total time: 3.00030482s):
+Jul 24 14:43:25 ecs-linux kube-apiserver[21561]: Trace[41999104]: [3.00030482s] [3.00026859s] END
+Jul 24 14:43:28 ecs-linux kube-apiserver[21561]: I0724 14:43:28.555585   21561 trace.go:116] Trace[475394685]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:25.555418149 +0800 CST m=+15.812461605) (total time: 3.000132179s):
+Jul 24 14:43:28 ecs-linux kube-apiserver[21561]: Trace[475394685]: [3.000132179s] [3.000114523s] END
+Jul 24 14:43:28 ecs-linux kube-apiserver[21561]: I0724 14:43:28.555756   21561 trace.go:116] Trace[1747710317]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:25.555371513 +0800 CST m=+15.812415025) (total time: 3.000368516s):
+Jul 24 14:43:28 ecs-linux kube-apiserver[21561]: Trace[1747710317]: [3.000368516s] [3.00032863s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.059806   21561 trace.go:116] Trace[1648508542]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:26.059656566 +0800 CST m=+16.316700035) (total time: 3.000127173s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[1648508542]: [3.000127173s] [3.000116305s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.059989   21561 trace.go:116] Trace[1774663993]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:26.059615614 +0800 CST m=+16.316659082) (total time: 3.000356227s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[1774663993]: [3.000356227s] [3.000321478s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.776017   21561 trace.go:116] Trace[789434248]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:26.775840766 +0800 CST m=+17.032884234) (total time: 3.000148265s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[789434248]: [3.000148265s] [3.000133598s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.776203   21561 trace.go:116] Trace[703030923]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:26.775790853 +0800 CST m=+17.032834331) (total time: 3.000397237s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[703030923]: [3.000397237s] [3.000353769s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.978547   21561 trace.go:116] Trace[2110544534]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:26.978381924 +0800 CST m=+17.235425381) (total time: 3.000140308s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[2110544534]: [3.000140308s] [3.0001292s] END
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: I0724 14:43:29.978738   21561 trace.go:116] Trace[467838361]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:26.978339171 +0800 CST m=+17.235383045) (total time: 3.000379615s):
+Jul 24 14:43:29 ecs-linux kube-apiserver[21561]: Trace[467838361]: [3.000379615s] [3.000344451s] END
+Jul 24 14:43:31 ecs-linux kube-apiserver[21561]: I0724 14:43:31.468561   21561 trace.go:116] Trace[1693194019]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:28.468406333 +0800 CST m=+18.725449801) (total time: 3.000130356s):
+Jul 24 14:43:31 ecs-linux kube-apiserver[21561]: Trace[1693194019]: [3.000130356s] [3.000119722s] END
+Jul 24 14:43:31 ecs-linux kube-apiserver[21561]: I0724 14:43:31.468730   21561 trace.go:116] Trace[1144127079]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:28.468364397 +0800 CST m=+18.725407853) (total time: 3.000348562s):
+Jul 24 14:43:31 ecs-linux kube-apiserver[21561]: Trace[1144127079]: [3.000348562s] [3.000314365s] END
+Jul 24 14:43:32 ecs-linux kube-apiserver[21561]: I0724 14:43:32.556830   21561 trace.go:116] Trace[1323467964]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:29.556692591 +0800 CST m=+19.813736132) (total time: 3.000113689s):
+Jul 24 14:43:32 ecs-linux kube-apiserver[21561]: Trace[1323467964]: [3.000113689s] [3.000106755s] END
+Jul 24 14:43:32 ecs-linux kube-apiserver[21561]: I0724 14:43:32.557013   21561 trace.go:116] Trace[1446887659]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:29.556636472 +0800 CST m=+19.813679928) (total time: 3.000358795s):
+Jul 24 14:43:32 ecs-linux kube-apiserver[21561]: Trace[1446887659]: [3.000358795s] [3.000309434s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.060937   21561 trace.go:116] Trace[680958358]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:30.060801988 +0800 CST m=+20.317845456) (total time: 3.000110441s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[680958358]: [3.000110441s] [3.000100069s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.061110   21561 trace.go:116] Trace[1192118415]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:30.060750364 +0800 CST m=+20.317793821) (total time: 3.000344974s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[1192118415]: [3.000344974s] [3.000300246s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.777122   21561 trace.go:116] Trace[665055505]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:30.776964127 +0800 CST m=+21.034007629) (total time: 3.00013101s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[665055505]: [3.00013101s] [3.000120005s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.777289   21561 trace.go:116] Trace[93849029]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:30.776905484 +0800 CST m=+21.033948941) (total time: 3.000366222s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[93849029]: [3.000366222s] [3.000324351s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.979741   21561 trace.go:116] Trace[719922624]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:30.97957763 +0800 CST m=+21.236621180) (total time: 3.000137998s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[719922624]: [3.000137998s] [3.000127879s] END
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: I0724 14:43:33.979920   21561 trace.go:116] Trace[1298018386]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:30.979533696 +0800 CST m=+21.236577258) (total time: 3.000368592s):
+Jul 24 14:43:33 ecs-linux kube-apiserver[21561]: Trace[1298018386]: [3.000368592s] [3.000331762s] END
+Jul 24 14:43:35 ecs-linux kube-apiserver[21561]: I0724 14:43:35.469736   21561 trace.go:116] Trace[1813020829]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:32.469552359 +0800 CST m=+22.726595897) (total time: 3.000151618s):
+Jul 24 14:43:35 ecs-linux kube-apiserver[21561]: Trace[1813020829]: [3.000151618s] [3.000137841s] END
+Jul 24 14:43:35 ecs-linux kube-apiserver[21561]: I0724 14:43:35.469945   21561 trace.go:116] Trace[1103028146]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:32.46951257 +0800 CST m=+22.726556040) (total time: 3.0004063s):
+Jul 24 14:43:35 ecs-linux kube-apiserver[21561]: Trace[1103028146]: [3.0004063s] [3.000373452s] END
+Jul 24 14:43:36 ecs-linux kube-apiserver[21561]: I0724 14:43:36.558096   21561 trace.go:116] Trace[2067670612]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:33.557909678 +0800 CST m=+23.814953134) (total time: 3.000161312s):
+Jul 24 14:43:36 ecs-linux kube-apiserver[21561]: Trace[2067670612]: [3.000161312s] [3.000150533s] END
+Jul 24 14:43:36 ecs-linux kube-apiserver[21561]: I0724 14:43:36.558254   21561 trace.go:116] Trace[52645079]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:33.557855474 +0800 CST m=+23.814898990) (total time: 3.000382421s):
+Jul 24 14:43:36 ecs-linux kube-apiserver[21561]: Trace[52645079]: [3.000382421s] [3.000335414s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.062122   21561 trace.go:116] Trace[1515900967]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:34.061969448 +0800 CST m=+24.319012904) (total time: 3.000125935s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[1515900967]: [3.000125935s] [3.000114131s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.062290   21561 trace.go:116] Trace[1011630429]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:34.061928249 +0800 CST m=+24.318971707) (total time: 3.000345023s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[1011630429]: [3.000345023s] [3.000310284s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.778194   21561 trace.go:116] Trace[281156373]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:34.778024201 +0800 CST m=+25.035067696) (total time: 3.000144436s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[281156373]: [3.000144436s] [3.000130303s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.778381   21561 trace.go:116] Trace[675707866]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:34.777970323 +0800 CST m=+25.035013877) (total time: 3.000393841s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[675707866]: [3.000393841s] [3.000347387s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.980910   21561 trace.go:116] Trace[308371396]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:34.980730039 +0800 CST m=+25.237773496) (total time: 3.000154515s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[308371396]: [3.000154515s] [3.000144139s] END
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: I0724 14:43:37.981091   21561 trace.go:116] Trace[1982896570]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:34.980687767 +0800 CST m=+25.237731288) (total time: 3.000387302s):
+Jul 24 14:43:37 ecs-linux kube-apiserver[21561]: Trace[1982896570]: [3.000387302s] [3.000351921s] END
+Jul 24 14:43:39 ecs-linux kube-apiserver[21561]: I0724 14:43:39.470965   21561 trace.go:116] Trace[2124105532]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:36.4708069 +0800 CST m=+26.727850368) (total time: 3.000130374s):
+Jul 24 14:43:39 ecs-linux kube-apiserver[21561]: Trace[2124105532]: [3.000130374s] [3.000119482s] END
+Jul 24 14:43:39 ecs-linux kube-apiserver[21561]: I0724 14:43:39.471159   21561 trace.go:116] Trace[904341068]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:36.47076491 +0800 CST m=+26.727808367) (total time: 3.000377341s):
+Jul 24 14:43:39 ecs-linux kube-apiserver[21561]: Trace[904341068]: [3.000377341s] [3.000342303s] END
+Jul 24 14:43:40 ecs-linux kube-apiserver[21561]: I0724 14:43:40.559261   21561 trace.go:116] Trace[331164659]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:37.559108866 +0800 CST m=+27.816152334) (total time: 3.000125094s):
+Jul 24 14:43:40 ecs-linux kube-apiserver[21561]: Trace[331164659]: [3.000125094s] [3.000114298s] END
+Jul 24 14:43:40 ecs-linux kube-apiserver[21561]: I0724 14:43:40.559417   21561 trace.go:116] Trace[1031207108]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:37.559061477 +0800 CST m=+27.816105016) (total time: 3.000338116s):
+Jul 24 14:43:40 ecs-linux kube-apiserver[21561]: Trace[1031207108]: [3.000338116s] [3.000297607s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.063207   21561 trace.go:116] Trace[85570322]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:38.063055261 +0800 CST m=+28.320098728) (total time: 3.000115444s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[85570322]: [3.000115444s] [3.000102054s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.063368   21561 trace.go:116] Trace[1146057917]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:38.063001288 +0800 CST m=+28.320044788) (total time: 3.000352011s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[1146057917]: [3.000352011s] [3.000305758s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.779307   21561 trace.go:116] Trace[1003189878]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:38.77914987 +0800 CST m=+29.036193338) (total time: 3.000129041s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[1003189878]: [3.000129041s] [3.000109356s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.779471   21561 trace.go:116] Trace[537794830]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:38.779107942 +0800 CST m=+29.036151454) (total time: 3.000346237s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[537794830]: [3.000346237s] [3.000311098s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.982103   21561 trace.go:116] Trace[13938973]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:38.981943179 +0800 CST m=+29.238986647) (total time: 3.000134457s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[13938973]: [3.000134457s] [3.000121677s] END
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: I0724 14:43:41.982267   21561 trace.go:116] Trace[848929714]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:38.981895795 +0800 CST m=+29.238939316) (total time: 3.000355774s):
+Jul 24 14:43:41 ecs-linux kube-apiserver[21561]: Trace[848929714]: [3.000355774s] [3.0003157s] END
+Jul 24 14:43:43 ecs-linux kube-apiserver[21561]: I0724 14:43:43.472213   21561 trace.go:116] Trace[730043119]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:40.472044878 +0800 CST m=+30.729088346) (total time: 3.000141569s):
+Jul 24 14:43:43 ecs-linux kube-apiserver[21561]: Trace[730043119]: [3.000141569s] [3.000123556s] END
+Jul 24 14:43:43 ecs-linux kube-apiserver[21561]: I0724 14:43:43.472378   21561 trace.go:116] Trace[1316558020]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:40.472001119 +0800 CST m=+30.729044598) (total time: 3.000358302s):
+Jul 24 14:43:43 ecs-linux kube-apiserver[21561]: Trace[1316558020]: [3.000358302s] [3.000322444s] END
+Jul 24 14:43:44 ecs-linux kube-apiserver[21561]: I0724 14:43:44.560404   21561 trace.go:116] Trace[330076966]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:41.560256959 +0800 CST m=+31.817300462) (total time: 3.000122178s):
+Jul 24 14:43:44 ecs-linux kube-apiserver[21561]: Trace[330076966]: [3.000122178s] [3.000111295s] END
+Jul 24 14:43:44 ecs-linux kube-apiserver[21561]: I0724 14:43:44.560613   21561 trace.go:116] Trace[1332327263]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:41.560205762 +0800 CST m=+31.817249229) (total time: 3.000389769s):
+Jul 24 14:43:44 ecs-linux kube-apiserver[21561]: Trace[1332327263]: [3.000389769s] [3.000346505s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.064389   21561 trace.go:116] Trace[1247976220]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:42.064240729 +0800 CST m=+32.321284185) (total time: 3.000117853s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[1247976220]: [3.000117853s] [3.000106084s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.064547   21561 trace.go:116] Trace[1650442819]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:42.064196588 +0800 CST m=+32.321240045) (total time: 3.000334797s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[1650442819]: [3.000334797s] [3.000297508s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.780416   21561 trace.go:116] Trace[349948415]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:42.780261638 +0800 CST m=+33.037305105) (total time: 3.000128715s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[349948415]: [3.000128715s] [3.000116118s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.780579   21561 trace.go:116] Trace[1249489015]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:42.78021531 +0800 CST m=+33.037258779) (total time: 3.000348093s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[1249489015]: [3.000348093s] [3.000308923s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.983211   21561 trace.go:116] Trace[372659]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:42.983038336 +0800 CST m=+33.240081836) (total time: 3.000145928s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[372659]: [3.000145928s] [3.000133643s] END
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: I0724 14:43:45.983399   21561 trace.go:116] Trace[937998538]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:42.982996866 +0800 CST m=+33.240040336) (total time: 3.000386007s):
+Jul 24 14:43:45 ecs-linux kube-apiserver[21561]: Trace[937998538]: [3.000386007s] [3.000351176s] END
+Jul 24 14:43:47 ecs-linux kube-apiserver[21561]: I0724 14:43:47.473426   21561 trace.go:116] Trace[2142463642]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:44.473250884 +0800 CST m=+34.730294372) (total time: 3.00014857s):
+Jul 24 14:43:47 ecs-linux kube-apiserver[21561]: Trace[2142463642]: [3.00014857s] [3.000129298s] END
+Jul 24 14:43:47 ecs-linux kube-apiserver[21561]: I0724 14:43:47.474008   21561 trace.go:116] Trace[1024219165]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:44.47320271 +0800 CST m=+34.730246241) (total time: 3.000782157s):
+Jul 24 14:43:47 ecs-linux kube-apiserver[21561]: Trace[1024219165]: [3.000782157s] [3.00074246s] END
+Jul 24 14:43:48 ecs-linux kube-apiserver[21561]: I0724 14:43:48.561744   21561 trace.go:116] Trace[684347161]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:45.561596029 +0800 CST m=+35.818639508) (total time: 3.0001241s):
+Jul 24 14:43:48 ecs-linux kube-apiserver[21561]: Trace[684347161]: [3.0001241s] [3.00010938s] END
+Jul 24 14:43:48 ecs-linux kube-apiserver[21561]: I0724 14:43:48.561917   21561 trace.go:116] Trace[411316126]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:45.561515853 +0800 CST m=+35.818559395) (total time: 3.000379038s):
+Jul 24 14:43:48 ecs-linux kube-apiserver[21561]: Trace[411316126]: [3.000379038s] [3.000308045s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.065474   21561 trace.go:116] Trace[441935830]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:46.065344745 +0800 CST m=+36.322388606) (total time: 3.000105804s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[441935830]: [3.000105804s] [3.000094936s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.065661   21561 trace.go:116] Trace[480897157]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:46.065291964 +0800 CST m=+36.322335431) (total time: 3.000352604s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[480897157]: [3.000352604s] [3.000306832s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.781576   21561 trace.go:116] Trace[90424506]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:46.781407896 +0800 CST m=+37.038451552) (total time: 3.000141307s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[90424506]: [3.000141307s] [3.000129947s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.781755   21561 trace.go:116] Trace[789463143]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:46.78136468 +0800 CST m=+37.038408204) (total time: 3.000372895s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[789463143]: [3.000372895s] [3.000337561s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.984466   21561 trace.go:116] Trace[2048423346]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:46.984287592 +0800 CST m=+37.241331101) (total time: 3.000151837s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[2048423346]: [3.000151837s] [3.000139609s] END
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: I0724 14:43:49.984647   21561 trace.go:116] Trace[1984729098]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:46.984241747 +0800 CST m=+37.241285203) (total time: 3.000385981s):
+Jul 24 14:43:49 ecs-linux kube-apiserver[21561]: Trace[1984729098]: [3.000385981s] [3.000347806s] END
+Jul 24 14:43:51 ecs-linux kube-apiserver[21561]: I0724 14:43:51.475025   21561 trace.go:116] Trace[2024043889]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:48.474849059 +0800 CST m=+38.731892541) (total time: 3.000149609s):
+Jul 24 14:43:51 ecs-linux kube-apiserver[21561]: Trace[2024043889]: [3.000149609s] [3.000135753s] END
+Jul 24 14:43:51 ecs-linux kube-apiserver[21561]: I0724 14:43:51.475212   21561 trace.go:116] Trace[1616300521]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:48.474793089 +0800 CST m=+38.731836960) (total time: 3.000403471s):
+Jul 24 14:43:51 ecs-linux kube-apiserver[21561]: Trace[1616300521]: [3.000403471s] [3.00035597s] END
+Jul 24 14:43:52 ecs-linux kube-apiserver[21561]: I0724 14:43:52.563066   21561 trace.go:116] Trace[248964031]: "cacher list" type:*core.Pod (started: 2020-07-24 14:43:49.562903167 +0800 CST m=+39.819946631) (total time: 3.000131818s):
+Jul 24 14:43:52 ecs-linux kube-apiserver[21561]: Trace[248964031]: [3.000131818s] [3.000116776s] END
+Jul 24 14:43:52 ecs-linux kube-apiserver[21561]: I0724 14:43:52.563235   21561 trace.go:116] Trace[280860397]: "List" url:/api/v1/pods,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:49.562854194 +0800 CST m=+39.819898024) (total time: 3.000363743s):
+Jul 24 14:43:52 ecs-linux kube-apiserver[21561]: Trace[280860397]: [3.000363743s] [3.000323129s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.066677   21561 trace.go:116] Trace[414295864]: "cacher list" type:*core.PersistentVolume (started: 2020-07-24 14:43:50.066501717 +0800 CST m=+40.323545185) (total time: 3.000150504s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[414295864]: [3.000150504s] [3.000139567s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.066848   21561 trace.go:116] Trace[862322045]: "List" url:/api/v1/persistentvolumes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:50.066460219 +0800 CST m=+40.323503716) (total time: 3.000368205s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[862322045]: [3.000368205s] [3.000333123s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.782654   21561 trace.go:116] Trace[1183720592]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:50.782492071 +0800 CST m=+41.039535542) (total time: 3.000129382s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[1183720592]: [3.000129382s] [3.000122054s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.782825   21561 trace.go:116] Trace[424743412]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:50.782443695 +0800 CST m=+41.039487194) (total time: 3.000359619s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[424743412]: [3.000359619s] [3.000318491s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.985648   21561 trace.go:116] Trace[923139924]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:50.985448972 +0800 CST m=+41.242492440) (total time: 3.000163606s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[923139924]: [3.000163606s] [3.000150828s] END
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: I0724 14:43:53.985811   21561 trace.go:116] Trace[632189127]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:50.985404676 +0800 CST m=+41.242448426) (total time: 3.000390133s):
+Jul 24 14:43:53 ecs-linux kube-apiserver[21561]: Trace[632189127]: [3.000390133s] [3.000353706s] END
+Jul 24 14:43:54 ecs-linux kube-apiserver[21561]: I0724 14:43:54.629469   21561 trace.go:116] Trace[1109459600]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:43:51.629313806 +0800 CST m=+41.886357273) (total time: 3.000128061s):
+Jul 24 14:43:54 ecs-linux kube-apiserver[21561]: Trace[1109459600]: [3.000128061s] [3.00011663s] END
+Jul 24 14:43:54 ecs-linux kube-apiserver[21561]: I0724 14:43:54.629652   21561 trace.go:116] Trace[1581345114]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:51.629268752 +0800 CST m=+41.886312299) (total time: 3.000364425s):
+Jul 24 14:43:54 ecs-linux kube-apiserver[21561]: Trace[1581345114]: [3.000364425s] [3.000326851s] END
+Jul 24 14:43:55 ecs-linux kube-apiserver[21561]: I0724 14:43:55.476172   21561 trace.go:116] Trace[269611511]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:52.475962392 +0800 CST m=+42.733005933) (total time: 3.000150022s):
+Jul 24 14:43:55 ecs-linux kube-apiserver[21561]: Trace[269611511]: [3.000150022s] [3.000136799s] END
+Jul 24 14:43:55 ecs-linux kube-apiserver[21561]: I0724 14:43:55.476366   21561 trace.go:116] Trace[1576137522]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:52.475918478 +0800 CST m=+42.732961935) (total time: 3.000431218s):
+Jul 24 14:43:55 ecs-linux kube-apiserver[21561]: Trace[1576137522]: [3.000431218s] [3.000394137s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.783729   21561 trace.go:116] Trace[885625136]: "cacher list" type:*policy.PodDisruptionBudget (started: 2020-07-24 14:43:54.783572316 +0800 CST m=+45.040615783) (total time: 3.000131382s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[885625136]: [3.000131382s] [3.000119464s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.783900   21561 trace.go:116] Trace[227381750]: "List" url:/apis/policy/v1beta1/poddisruptionbudgets,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:54.783530732 +0800 CST m=+45.040574190) (total time: 3.000353555s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[227381750]: [3.000353555s] [3.000318747s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.850778   21561 trace.go:116] Trace[45270035]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:43:54.850621568 +0800 CST m=+45.107665101) (total time: 3.00013078s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[45270035]: [3.00013078s] [3.000116996s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.850944   21561 trace.go:116] Trace[665912439]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:54.850565971 +0800 CST m=+45.107609511) (total time: 3.000362244s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[665912439]: [3.000362244s] [3.000314844s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.986870   21561 trace.go:116] Trace[729753785]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:54.986723505 +0800 CST m=+45.243766996) (total time: 3.000118953s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[729753785]: [3.000118953s] [3.000111246s] END
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: I0724 14:43:57.987134   21561 trace.go:116] Trace[1517482042]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:54.986672265 +0800 CST m=+45.243715721) (total time: 3.000442251s):
+Jul 24 14:43:57 ecs-linux kube-apiserver[21561]: Trace[1517482042]: [3.000442251s] [3.000397445s] END
+Jul 24 14:43:58 ecs-linux kube-apiserver[21561]: I0724 14:43:58.630739   21561 trace.go:116] Trace[29005449]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:43:55.630570015 +0800 CST m=+45.887613488) (total time: 3.00014338s):
+Jul 24 14:43:58 ecs-linux kube-apiserver[21561]: Trace[29005449]: [3.00014338s] [3.000132333s] END
+Jul 24 14:43:58 ecs-linux kube-apiserver[21561]: I0724 14:43:58.630902   21561 trace.go:116] Trace[209427787]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:55.630522137 +0800 CST m=+45.887565657) (total time: 3.000365213s):
+Jul 24 14:43:58 ecs-linux kube-apiserver[21561]: Trace[209427787]: [3.000365213s] [3.000329362s] END
+Jul 24 14:43:59 ecs-linux kube-apiserver[21561]: I0724 14:43:59.477873   21561 trace.go:116] Trace[2087168612]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:43:56.477730317 +0800 CST m=+46.734773785) (total time: 3.000117892s):
+Jul 24 14:43:59 ecs-linux kube-apiserver[21561]: Trace[2087168612]: [3.000117892s] [3.000106141s] END
+Jul 24 14:43:59 ecs-linux kube-apiserver[21561]: I0724 14:43:59.478042   21561 trace.go:116] Trace[1453278664]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:56.477679703 +0800 CST m=+46.734723170) (total time: 3.000346109s):
+Jul 24 14:43:59 ecs-linux kube-apiserver[21561]: Trace[1453278664]: [3.000346109s] [3.000301928s] END
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: I0724 14:44:01.851942   21561 trace.go:116] Trace[912934213]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:43:58.851742934 +0800 CST m=+49.108786402) (total time: 3.000161575s):
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: Trace[912934213]: [3.000161575s] [3.00015008s] END
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: I0724 14:44:01.852154   21561 trace.go:116] Trace[1832382818]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:58.851699693 +0800 CST m=+49.108743149) (total time: 3.000436548s):
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: Trace[1832382818]: [3.000436548s] [3.000400376s] END
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: I0724 14:44:01.988106   21561 trace.go:116] Trace[444454003]: "cacher list" type:*core.Node (started: 2020-07-24 14:43:58.987940368 +0800 CST m=+49.244983939) (total time: 3.000113718s):
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: Trace[444454003]: [3.000113718s] [3.000100592s] END
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: I0724 14:44:01.988294   21561 trace.go:116] Trace[632280757]: "List" url:/api/v1/nodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:58.98789209 +0800 CST m=+49.244935608) (total time: 3.000375848s):
+Jul 24 14:44:01 ecs-linux kube-apiserver[21561]: Trace[632280757]: [3.000375848s] [3.000334964s] END
+Jul 24 14:44:02 ecs-linux kube-apiserver[21561]: I0724 14:44:02.631869   21561 trace.go:116] Trace[806356667]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:43:59.631733757 +0800 CST m=+49.888777225) (total time: 3.000109024s):
+Jul 24 14:44:02 ecs-linux kube-apiserver[21561]: Trace[806356667]: [3.000109024s] [3.000097894s] END
+Jul 24 14:44:02 ecs-linux kube-apiserver[21561]: I0724 14:44:02.632034   21561 trace.go:116] Trace[1324306378]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:43:59.631688721 +0800 CST m=+49.888732178) (total time: 3.00032786s):
+Jul 24 14:44:02 ecs-linux kube-apiserver[21561]: Trace[1324306378]: [3.00032786s] [3.000290841s] END
+Jul 24 14:44:03 ecs-linux kube-apiserver[21561]: I0724 14:44:03.478954   21561 trace.go:116] Trace[1565685612]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:44:00.478776607 +0800 CST m=+50.735820110) (total time: 3.000151721s):
+Jul 24 14:44:03 ecs-linux kube-apiserver[21561]: Trace[1565685612]: [3.000151721s] [3.000140597s] END
+Jul 24 14:44:03 ecs-linux kube-apiserver[21561]: I0724 14:44:03.479134   21561 trace.go:116] Trace[51637763]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:00.4787324 +0800 CST m=+50.735775974) (total time: 3.00038066s):
+Jul 24 14:44:03 ecs-linux kube-apiserver[21561]: Trace[51637763]: [3.00038066s] [3.000342636s] END
+Jul 24 14:44:05 ecs-linux kube-apiserver[21561]: I0724 14:44:05.853068   21561 trace.go:116] Trace[1201261841]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:02.852879148 +0800 CST m=+53.109922669) (total time: 3.000163175s):
+Jul 24 14:44:05 ecs-linux kube-apiserver[21561]: Trace[1201261841]: [3.000163175s] [3.000148256s] END
+Jul 24 14:44:05 ecs-linux kube-apiserver[21561]: I0724 14:44:05.853245   21561 trace.go:116] Trace[35663637]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:02.85283679 +0800 CST m=+53.109880341) (total time: 3.000392436s):
+Jul 24 14:44:05 ecs-linux kube-apiserver[21561]: Trace[35663637]: [3.000392436s] [3.000357709s] END
+Jul 24 14:44:06 ecs-linux kube-apiserver[21561]: I0724 14:44:06.633015   21561 trace.go:116] Trace[3098533]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:03.632834718 +0800 CST m=+53.889878285) (total time: 3.000151721s):
+Jul 24 14:44:06 ecs-linux kube-apiserver[21561]: Trace[3098533]: [3.000151721s] [3.000140367s] END
+Jul 24 14:44:06 ecs-linux kube-apiserver[21561]: I0724 14:44:06.633185   21561 trace.go:116] Trace[1757960743]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:03.632791748 +0800 CST m=+53.889835216) (total time: 3.000377667s):
+Jul 24 14:44:06 ecs-linux kube-apiserver[21561]: Trace[1757960743]: [3.000377667s] [3.000341311s] END
+Jul 24 14:44:07 ecs-linux kube-apiserver[21561]: I0724 14:44:07.480110   21561 trace.go:116] Trace[245149647]: "cacher list" type:*storage.StorageClass (started: 2020-07-24 14:44:04.479949801 +0800 CST m=+54.736993320) (total time: 3.000133718s):
+Jul 24 14:44:07 ecs-linux kube-apiserver[21561]: Trace[245149647]: [3.000133718s] [3.000125791s] END
+Jul 24 14:44:07 ecs-linux kube-apiserver[21561]: I0724 14:44:07.480312   21561 trace.go:116] Trace[1362426686]: "List" url:/apis/storage.k8s.io/v1/storageclasses,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:04.479908308 +0800 CST m=+54.736951776) (total time: 3.000385326s):
+Jul 24 14:44:07 ecs-linux kube-apiserver[21561]: Trace[1362426686]: [3.000385326s] [3.000350441s] END
+Jul 24 14:44:09 ecs-linux kube-apiserver[21561]: I0724 14:44:09.854218   21561 trace.go:116] Trace[903107935]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:06.854038238 +0800 CST m=+57.111081705) (total time: 3.000155348s):
+Jul 24 14:44:09 ecs-linux kube-apiserver[21561]: Trace[903107935]: [3.000155348s] [3.000143701s] END
+Jul 24 14:44:09 ecs-linux kube-apiserver[21561]: I0724 14:44:09.854410   21561 trace.go:116] Trace[1388906248]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:06.853996673 +0800 CST m=+57.111040144) (total time: 3.000394755s):
+Jul 24 14:44:09 ecs-linux kube-apiserver[21561]: Trace[1388906248]: [3.000394755s] [3.000360185s] END
+Jul 24 14:44:10 ecs-linux kube-apiserver[21561]: I0724 14:44:10.634182   21561 trace.go:116] Trace[133565853]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:07.633971063 +0800 CST m=+57.891014609) (total time: 3.000167643s):
+Jul 24 14:44:10 ecs-linux kube-apiserver[21561]: Trace[133565853]: [3.000167643s] [3.000161368s] END
+Jul 24 14:44:10 ecs-linux kube-apiserver[21561]: I0724 14:44:10.634363   21561 trace.go:116] Trace[1567611884]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:07.633929895 +0800 CST m=+57.890973404) (total time: 3.000416341s):
+Jul 24 14:44:10 ecs-linux kube-apiserver[21561]: Trace[1567611884]: [3.000416341s] [3.000381654s] END
+Jul 24 14:44:13 ecs-linux kube-apiserver[21561]: I0724 14:44:13.855287   21561 trace.go:116] Trace[679665473]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:10.855139579 +0800 CST m=+61.112183132) (total time: 3.000121631s):
+Jul 24 14:44:13 ecs-linux kube-apiserver[21561]: Trace[679665473]: [3.000121631s] [3.00011019s] END
+Jul 24 14:44:13 ecs-linux kube-apiserver[21561]: I0724 14:44:13.855511   21561 trace.go:116] Trace[1116876057]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:10.855096129 +0800 CST m=+61.112139695) (total time: 3.00039848s):
+Jul 24 14:44:13 ecs-linux kube-apiserver[21561]: Trace[1116876057]: [3.00039848s] [3.000362319s] END
+Jul 24 14:44:14 ecs-linux kube-apiserver[21561]: I0724 14:44:14.635363   21561 trace.go:116] Trace[1975177801]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:11.635210069 +0800 CST m=+61.892253537) (total time: 3.000126548s):
+Jul 24 14:44:14 ecs-linux kube-apiserver[21561]: Trace[1975177801]: [3.000126548s] [3.00011447s] END
+Jul 24 14:44:14 ecs-linux kube-apiserver[21561]: I0724 14:44:14.635533   21561 trace.go:116] Trace[572272742]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:11.635161477 +0800 CST m=+61.892205347) (total time: 3.000354049s):
+Jul 24 14:44:14 ecs-linux kube-apiserver[21561]: Trace[572272742]: [3.000354049s] [3.000312281s] END
+Jul 24 14:44:17 ecs-linux kube-apiserver[21561]: I0724 14:44:17.856538   21561 trace.go:116] Trace[1166474006]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:14.856363761 +0800 CST m=+65.113407231) (total time: 3.000141442s):
+Jul 24 14:44:17 ecs-linux kube-apiserver[21561]: Trace[1166474006]: [3.000141442s] [3.000128249s] END
+Jul 24 14:44:17 ecs-linux kube-apiserver[21561]: I0724 14:44:17.856698   21561 trace.go:116] Trace[841689304]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:14.856321419 +0800 CST m=+65.113365003) (total time: 3.000360274s):
+Jul 24 14:44:17 ecs-linux kube-apiserver[21561]: Trace[841689304]: [3.000360274s] [3.000324667s] END
+Jul 24 14:44:18 ecs-linux kube-apiserver[21561]: I0724 14:44:18.636469   21561 trace.go:116] Trace[96717238]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:15.636299828 +0800 CST m=+65.893343284) (total time: 3.000137834s):
+Jul 24 14:44:18 ecs-linux kube-apiserver[21561]: Trace[96717238]: [3.000137834s] [3.000125251s] END
+Jul 24 14:44:18 ecs-linux kube-apiserver[21561]: I0724 14:44:18.636645   21561 trace.go:116] Trace[1744578490]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:15.636253775 +0800 CST m=+65.893297312) (total time: 3.00037456s):
+Jul 24 14:44:18 ecs-linux kube-apiserver[21561]: Trace[1744578490]: [3.00037456s] [3.000335466s] END
+Jul 24 14:44:21 ecs-linux kube-apiserver[21561]: I0724 14:44:21.857754   21561 trace.go:116] Trace[268015170]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:18.85757578 +0800 CST m=+69.114619326) (total time: 3.000152722s):
+Jul 24 14:44:21 ecs-linux kube-apiserver[21561]: Trace[268015170]: [3.000152722s] [3.000142228s] END
+Jul 24 14:44:21 ecs-linux kube-apiserver[21561]: I0724 14:44:21.857929   21561 trace.go:116] Trace[356689272]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:18.857534323 +0800 CST m=+69.114577856) (total time: 3.000378628s):
+Jul 24 14:44:21 ecs-linux kube-apiserver[21561]: Trace[356689272]: [3.000378628s] [3.000344373s] END
+Jul 24 14:44:22 ecs-linux kube-apiserver[21561]: I0724 14:44:22.637631   21561 trace.go:116] Trace[749788035]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:19.637434629 +0800 CST m=+69.894478097) (total time: 3.00015289s):
+Jul 24 14:44:22 ecs-linux kube-apiserver[21561]: Trace[749788035]: [3.00015289s] [3.000140617s] END
+Jul 24 14:44:22 ecs-linux kube-apiserver[21561]: I0724 14:44:22.637809   21561 trace.go:116] Trace[1061452008]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:19.63738701 +0800 CST m=+69.894430467) (total time: 3.000405902s):
+Jul 24 14:44:22 ecs-linux kube-apiserver[21561]: Trace[1061452008]: [3.000405902s] [3.000366352s] END
+Jul 24 14:44:25 ecs-linux kube-apiserver[21561]: I0724 14:44:25.858850   21561 trace.go:116] Trace[1764257148]: "cacher list" type:*storage.CSINode (started: 2020-07-24 14:44:22.858712554 +0800 CST m=+73.115756023) (total time: 3.000112374s):
+Jul 24 14:44:25 ecs-linux kube-apiserver[21561]: Trace[1764257148]: [3.000112374s] [3.000099675s] END
+Jul 24 14:44:25 ecs-linux kube-apiserver[21561]: I0724 14:44:25.859011   21561 trace.go:116] Trace[408268248]: "List" url:/apis/storage.k8s.io/v1/csinodes,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:22.858670388 +0800 CST m=+73.115714328) (total time: 3.000323966s):
+Jul 24 14:44:25 ecs-linux kube-apiserver[21561]: Trace[408268248]: [3.000323966s] [3.000289231s] END
+Jul 24 14:44:26 ecs-linux kube-apiserver[21561]: I0724 14:44:26.638821   21561 trace.go:116] Trace[1076286353]: "cacher list" type:*core.PersistentVolumeClaim (started: 2020-07-24 14:44:23.638655652 +0800 CST m=+73.895699207) (total time: 3.000139167s):
+Jul 24 14:44:26 ecs-linux kube-apiserver[21561]: Trace[1076286353]: [3.000139167s] [3.000125995s] END
+Jul 24 14:44:26 ecs-linux kube-apiserver[21561]: I0724 14:44:26.639139   21561 trace.go:116] Trace[391328395]: "List" url:/api/v1/persistentvolumeclaims,user-agent:kube-scheduler/v1.18.5 (linux/amd64) kubernetes/e6503f8/scheduler,client:127.0.0.1 (started: 2020-07-24 14:44:23.638592682 +0800 CST m=+73.895636320) (total time: 3.000521052s):
+Jul 24 14:44:26 ecs-linux kube-apiserver[21561]: Trace[391328395]: [3.000521052s] [3.00046729s] END
+Ju
